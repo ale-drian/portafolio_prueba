@@ -1,0 +1,161 @@
+:root {
+    --paleta_1: #2c3e50;
+    --paleta_2: #1abc9c;
+    --paleta_3: #ffffff;
+}
+/*Globales*/
+*{
+    box-sizing: border-box;
+    color: var(--texto_1);
+}
+.portafolio-bg-p1{
+    background-color: var(--paleta_1) !important;
+}
+.portafolio-bg-p2{
+    background-color: var(--paleta_2) !important;
+}
+.portafolio-bg-p3{
+    background-color: var(--paleta_3) !important;
+}
+.portafolio-color-p1{
+    color: var(--paleta_1) !important;
+}
+.portafolio-color-p2{
+    color: var(--paleta_2) !important;
+}
+.portafolio-color-p3{
+    color: var(--paleta_3) !important;
+}
+/*Navbar*/
+.navbar-portafolio{
+    background-color: var(--paleta_1);
+    position: fixed;
+    width: 100vw;
+    z-index: 1000;
+}
+
+.navbar-portafolio a{
+    text-decoration: none;
+    color: white;
+    height: 80px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.navbar-toggler-icon{
+    display: contents;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+/*Portafolio*/
+.portafolio-divider .contorno{
+    height: 8px;
+    border-radius: 4px;
+    width: 80px;
+    margin: 0 10px;
+}
+
+.portafolio-divider i{
+    font-size: 40px;
+}
+
+.portafolio-titulo{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.portafolio-menu{
+    justify-content: flex-end !important;
+}
+
+.portafolio-section{
+    min-height: 100vh;
+    padding: 100px 0;
+}
+
+#portafolio_home{
+    background-color: var(--paleta_2);
+}
+
+#portafolio_home h1{
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+#portafolio_home div.contenido{
+    width: 50%;
+}
+
+.portafolio-imagen{
+    width: 300px;
+}
+
+#portafolio_portafolio{
+    background-color: var(--paleta_3);
+}
+
+#proyectos_portafolio .img-portafolio{
+    width: 100%;
+    border-radius: 10px;
+}
+
+#proyectos_portafolio .portafolio-proyecto .portafolio-item{
+    position: relative;
+}
+#proyectos_portafolio .portafolio-proyecto .portafolio-item-content{
+    position: absolute !important;
+    opacity: 0 !important;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: var(--paleta_2);
+    color: var(--paleta_3);
+}
+
+
+#proyectos_portafolio .portafolio-proyecto:hover .portafolio-item-content{
+    display: flex !important;
+    opacity: 0.9 !important;
+    transition: opacity 0.5s;
+}
+
+#proyectos_portafolio .portafolio-proyecto:hover .img-portafolio{
+    transition: opacity 3.5s;
+}
+
+#portafolio_about{
+    background-color: var(--paleta_2);
+}
+
+#portafolio_contacto{
+    background-color: var(--paleta_3);
+}
+
+#portafolio_contacto .portafolio-formulario{
+    font-size: 20px;
+}
+
+
+@media (max-width: 600px) {
+    #portafolio_home div.contenido{
+        width: 80%;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-toggler-icon{
+        display: none;
+    }
+}
+@media (max-width: 991px) {
+    .portafolio-menu{
+        justify-content: flex-start !important;
+    }
+    #portafolio_home h1{
+        font-size: 30px;
+    }
+}
